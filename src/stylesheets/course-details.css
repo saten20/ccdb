@@ -1,0 +1,11 @@
+.allReviewContainer{
+    width: 100%;
+    background-color: #fff;
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px){
+    .allReviewContainer{
+        padding: 30px;
+    }
+}

@@ -1,0 +1,225 @@
+header{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    position: fixed;
+    border-bottom: 1px solid #000;
+    z-index: 5;
+}
+
+.logoBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.desktopMenuIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.desktopMenuIcon i{
+    letter-spacing: 5px;
+}
+
+
+.userBoxContainer{
+    position: relative;
+}
+
+.userBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #fff;
+}
+
+.userMenu{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userMenu ul{
+    width: 100%;
+}
+
+.userMenu li{
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 8px 15px 8px 8px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.userMenu li:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.userMenu i{
+    margin-right: 10px;
+    width: 15px;
+}
+
+.username{
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+.clickToLogin{
+    background-color: #000;
+    padding: 8px 20px;
+    color: #fff !important;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.clickToLoginMob{
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #000 !important;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: -5px;
+}
+
+.desktopMenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: all .5s ease;
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    z-index: 6;
+}
+.menuHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopMenu img{
+    width: 150px;
+}
+
+.hideDesktopMenu i{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.desktopMenuItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.desktopMenuItems ul li{
+    list-style: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.desktopMenuItems ul li:hover{
+    transform: translateX(10px);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.desktopMenuItems ul li:first-child{
+    color: greenyellow;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transform: translateX(0);
+    transition: none;
+    cursor: text;
+}
+
+/* Media query for screens up to 600px wide (typical mobile screens) */
+@media screen and (max-width: 600px) {
+
+    header{
+        padding: 15px 20px 10px 20px;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    .desktopMenuIcon plaintext{
+        display: none;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .clickToLogin{
+        display: none;
+    }
+
+    .userBox{
+        display: none;
+    }
+
+    .userBoxContainer{
+        display: none;
+    }
+
+    .menuHeader{
+        position: fixed;
+        top: 30px;
+        width: 85%;
+        /* background-color: #fff; */
+    }
+
+    .desktopMenu{
+        padding: 150px 30px 100px 30px;
+        overflow-y: scroll;
+    }
+
+    .desktopMenu img{
+        width: 100px;
+    }
+
+    .desktopMenuItems{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+
+    .hideDesktopMenu i{
+        font-size: 2rem;
+    }
+}
+

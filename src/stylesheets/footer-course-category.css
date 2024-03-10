@@ -1,0 +1,67 @@
+.footerCourseCategoryContainer{
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.footerCourseCategoryHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerCourseCategoryHeading h2{
+    font-size: 2.5rem;
+}
+
+.footerCourseCategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footerCourseCategory plaintext{
+    background-color: #000;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.footerCourseCategory plaintext:hover{
+    color: #000;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-5px);
+}
+
+.footerCourseCategory span:active{
+    transform: translateY(0);
+}
+
+/* Media query for screens up to 600px wide (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .footerCourseCategory {
+        flex-direction: column; /* Stack categories vertically on smaller screens */
+        margin-bottom: 0;
+    }
+
+    .footerCourseCategory plaintext {
+        width: 100%; /* Full width for categories on smaller screens */
+        margin-bottom: 20px; /* Adjust margin between categories for smaller screens */
+    }
+
+    .footerCourseCategoryHeading h2{
+        font-size:1.5rem;
+    }
+}

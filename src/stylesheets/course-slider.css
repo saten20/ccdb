@@ -1,0 +1,107 @@
+.courseSliderContainer{
+    width: 100vw;
+    height: 80vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    column-gap: 20px;
+    padding: 50px 60px 50px 50px;
+}
+
+.courseSlider{
+    flex: 2;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.upcomingCourses{
+    flex: 1;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.upcHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upcHeading em{
+    font-size: 1rem;
+    color: greenyellow;
+}
+
+.upcomingCourses .upc{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.upc:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(81, 255, 81, 0.19);
+}
+
+.upc img{
+    width: 150px;
+    border-radius: 8px;
+}
+
+.upc span{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    justify-content: space-around;
+}
+
+.upc span em{
+    background-color: greenyellow;
+    padding: 2px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Media query for screens up to 600px wide (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .courseSliderContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+        height: auto; /* Remove fixed height for smaller screens */
+    }
+
+    .upc span{
+        font-size: 1rem;
+    }
+
+    .upc span em{
+        font-size: .5rem;
+    }
+
+    .courseSlider {
+        flex: 1; /* Take full width on smaller screens */
+        margin-bottom: 20px; /* Adjust margin between sections for smaller screens */
+    }
+
+    .upcomingCourses {
+        flex: 1; /* Take full width on smaller screens */
+    }
+
+    .scrollPrev,
+    .scrollNext {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}

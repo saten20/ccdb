@@ -1,0 +1,44 @@
+.ourTeamContainer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 150px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    color: #000;
+}
+
+.ourTeamHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourTeamHeading h2{
+    font-size: 2.5rem;
+}
+
+.ourTeamHeading h2 i{
+    color: red;
+}
+
+.ourTeamHeading em{
+    color: greenyellow;
+}
+
+.ourTeam{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+    .ourTeamHeading h2{
+        font-size: 1.5rem;
+    }
+}

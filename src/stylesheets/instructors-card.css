@@ -1,0 +1,36 @@
+.instructorsCard{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    /* cursor: pointer; */
+    background-color: transparent;
+}
+
+.instructorImgContainer:hover img{
+    filter: grayscale(0);
+}
+
+.instructorImgContainer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.instructorsCard img{
+    width: 200px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    filter: grayscale(1);
+}
+
+.instructorsCard img:hover{
+    transform: scale(1.2);
+}
+
+.instructorsRating i{
+    color: red;
+}

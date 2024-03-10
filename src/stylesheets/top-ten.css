@@ -1,0 +1,56 @@
+.topTenContainer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+}
+
+.topTenHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topTenHeading h2{
+    font-size: 2.5rem;
+}
+
+.topTenHeading em{
+    color: green;
+}
+
+.topTenCourses{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for screens up to 600px wide (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .topTenContainer {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .topTenHeading {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+
+    .topTenHeading h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .topTenCourses {
+        flex-direction: column; /* Stack courses vertically on smaller screens */
+        column-gap: 20px; /* Adjust the gap between courses for smaller screens */
+    }
+}
+
